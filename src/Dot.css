@@ -1,11 +1,31 @@
 .dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: black;
-    margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 17vw;
+	height: 17vw;
+	margin: 1vw;
+	border-radius: 50%;
+	background-color: black;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
-.dot + .dot {
-    margin-left: 10px;
+.dot:hover {
+	background-color: royalblue;
+}
+
+.dot p {
+	font-size: 8vw;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.activeDot {
+	background-color: lime;
+}
+
+.activeDot p {
+	opacity: 1;
 }
